@@ -17,10 +17,6 @@
 | 调用数 | 38 | 53 | 双方独立决策，调用数可能不同 |
 | 剩余血量 | 86 HP | 0 HP | Jev 获胜 |
 
-这次录屏 Jev 更快、更省且获胜。[前一次录制的测量](docs/earlier-measurement.json)中 Jev 同样更快、更省，但 DeepSeek 获胜；前一次因结算画面裁切不完整而重录。动作选择与时机也影响胜负，不能把胜负完全归因于响应速度。速度含浏览器往返和调度；费用按响应 token 与当时单价估算，最终以服务商账单为准。百分比以较慢／较贵的一方为基准。这是一场演示，不能作为通用能力或胜率排名。
-
-[本场测量与录制信息](docs/demo-result.json)。录制准备与导出使用 [desktop-recorder](https://github.com/code-cheers/jev-fighting-demo/blob/main/docs/recording.md) 工作流；原生捕获不可用时，改为按真实时间戳采集浏览器页面帧。
-
 ## 启动
 
 需要 Node.js 22。HTTP 传输使用 Undici，并遵循本机代理环境配置。
