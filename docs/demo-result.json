@@ -1,0 +1,39 @@
+{
+  "result": "本场对比\n统计已完成\n决策速度 · 本场中位耗时\nJEV 更快\n快 179 ms\n耗时减少 36.1%\nJEV\n317 ms · 38 次响应\nDEEPSEEK\n496 ms · 53 次响应\n调用成本 · 本场总费用估算\nJEV 更省\n省 $0.002505\n费用减少 63.3%\nJEV\n$0.001452 · 38 次调用\nDEEPSEEK\n$0.003957 · 53 次调用\n\n百分比以较慢／较贵的一方为基准。速度含请求往返；费用按 token 估算。",
+  "outcome": "JEV 胜\n\n正常结束 · 86 : 0 HP",
+  "errors": [],
+  "recording": {
+    "startedAt": "2026-10-11T23:52:08.505Z",
+    "durationMs": 56049,
+    "frameCount": 952,
+    "capture": "Actual browser viewport screenshots with elapsed-time timestamps; exported at original speed; silent video",
+    "file": "media/jev-vs-deepseek-demo.mp4",
+    "models": {
+      "jev": "jev-1.13.0",
+      "deepseek": "deepseek-flash, thinking disabled"
+    }
+  },
+  "measurements": {
+    "jev": {
+      "medianMs": 317,
+      "estimatedUSD": 0.001452,
+      "calls": 38
+    },
+    "deepseek": {
+      "medianMs": 496,
+      "estimatedUSD": 0.003957,
+      "calls": 53
+    },
+    "faster": "jev",
+    "differenceMs": 179,
+    "latencyReductionPercent": 36.1,
+    "cheaper": "jev",
+    "estimatedSavingUSD": 0.002505,
+    "costReductionPercent": 63.3,
+    "matchWinner": "jev",
+    "hp": [
+      86,
+      0
+    ]
+  }
+}

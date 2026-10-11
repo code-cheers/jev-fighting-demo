@@ -4,3 +4,5 @@
 runs/
 node_modules/
 artifacts/
+
+demo-out/

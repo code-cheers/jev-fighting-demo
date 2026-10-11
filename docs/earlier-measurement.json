@@ -1,0 +1,29 @@
+{
+  "result": "本场对比\n统计已完成\n决策速度 · 本场中位耗时\nJEV 更快\n快 186 ms\n耗时减少 36.3%\nJEV\n327 ms · 29 次响应\nDEEPSEEK\n513 ms · 23 次响应\n调用成本 · 本场总费用估算\nJEV 更省\n省 $0.000564\n费用减少 33.7%\nJEV\n$0.001109 · 29 次调用\nDEEPSEEK\n$0.001673 · 23 次调用\n\n百分比以较慢／较贵的一方为基准。速度含请求往返；费用按 token 估算。",
+  "outcome": "DEEPSEEK 胜\n\n正常结束 · 0 : 26 HP",
+  "errors": [],
+  "measurements": {
+    "jev": {
+      "medianMs": 327,
+      "estimatedUSD": 0.001109,
+      "calls": 29
+    },
+    "deepseek": {
+      "medianMs": 513,
+      "estimatedUSD": 0.001673,
+      "calls": 23
+    },
+    "faster": "jev",
+    "differenceMs": 186,
+    "latencyReductionPercent": 36.3,
+    "cheaper": "jev",
+    "estimatedSavingUSD": 0.000564,
+    "costReductionPercent": 33.7,
+    "matchWinner": "deepseek",
+    "hp": [
+      0,
+      26
+    ]
+  },
+  "note": "前一次录制的测量，因结算画面裁切不完整而未采用；不是当前视频对应的对局。"
+}
