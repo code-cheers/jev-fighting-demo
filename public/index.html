@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="真实 API 驱动的格斗决策实验。比较 Jev 与 DeepSeek 的响应时间和调用成本。"><title>Decision Arena · Jev 对战实验</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><a class="brand" href="/" aria-label="Decision Arena 首页"><span class="brand-icon">D<span> / </span>A</span><strong>DECISION ARENA</strong></a><div class="header-meta"><span class="dot"></span> LOCAL EXPERIMENT <span class="edition">VOL. 01</span></div></header>
+<main>
+<section class="intro"><div><div class="eyebrow">AI DUEL / SPEED &amp; COST</div><h1>Jev vs DeepSeek<br><span>谁更快，谁更省？</span></h1><p>同一套战斗规则，两个真实模型自主对战。实测决策响应时间与调用成本，观察速度如何影响交锋。</p></div><div class="thesis"><span>01 / AI DUEL</span><span>02 / RESPONSE TIME</span><span>03 / API COST</span><small>谁更快、花费多少，由实测回答。</small></div></section>
+<section class="workspace">
+<div class="main-column">
+<div class="duel-heading"><strong>Jev vs DeepSeek</strong><span>模型自动对战</span></div>
+<div class="arena-shell"><div class="arena-top"><span><i class="dot"></i> CLASSIC 2D / AI MATCH</span><span id="stageStatus">READY TO FIGHT</span></div>
+<div class="fight-hud"><div class="fighter-hud left"><div><strong id="leftName">草薙京 / JEV</strong><span id="leftHp">100 HP</span></div><div class="hp-track"><div id="leftBar"></div></div></div><div class="clock"><strong id="clock">45</strong><span>SECONDS</span></div><div class="fighter-hud right"><div><strong id="rightName">不知火舞 / DEEPSEEK</strong><span id="rightHp">100 HP</span></div><div class="hp-track"><div id="rightBar"></div></div></div></div>
+<canvas id="arena" width="1000" height="500" aria-label="格斗对战画面"></canvas>
+<div id="overlay" class="overlay"><div class="overlay-tag">READY / ROUND 01</div><h2>决策，就是下一招。</h2><p id="overlayText">两个模型自主选择动作，开始真实 API 对战。</p><button id="startOverlay" class="primary">开始对局 <span>↗</span></button><small>每局最多 45 秒 / 120 次付费调用</small></div>
+<div class="stage-footer"><span>KYO vs MAI / CLASSIC STAGE</span><span id="liveFlag">● PAUSED — 不发起请求</span><span>60 FPS ENGINE</span></div></div>
+<div class="controls"><div class="action-buttons"><button id="start" class="primary">开始对局 ↗</button><button id="pause" disabled>暂停</button><button id="stop" disabled>结束对局</button></div><div class="settings"><button id="swap" aria-pressed="false">交换左右</button><label>决定有效期 <select id="deadline"><option value="1000">1 秒</option><option value="1500" selected>1.5 秒</option><option value="3000">3 秒</option></select></label><button id="sound" aria-pressed="true">音效 开</button></div></div>
+
+</div>
+<aside><section id="comparisonPanel" class="comparison-panel"><div class="panel-heading"><h2>速度与成本</h2><span id="comparisonLabel">LIVE COMPARISON</span></div><p class="panel-note">实时耗时与费用 · 结束后显示本场结论</p><section id="matchComparison" class="match-comparison" hidden aria-live="polite" aria-label="本场速度与成本对比"></section>
+<div class="metrics-row"><article class="metric-card jev"><div class="metric-title"><span>● JEV</span><small id="jevModel">准备连接</small></div><div class="metric-main"><strong id="jevLatency">—</strong><span>ms / 决策到可执行</span></div><div class="metric-bottom"><div><span>中位耗时</span><b id="jevMedian">—</b></div><div><span>调用 / 未执行</span><b id="jevCalls">0 / 0</b></div><div><span>费用估算 USD</span><b id="jevCost">$0.000000</b></div></div></article><article class="metric-card deepseek"><div class="metric-title"><span>● DEEPSEEK</span><small id="deepseekModel">非思考模式</small></div><div class="metric-main"><strong id="deepseekLatency">—</strong><span>ms / 决策到可执行</span></div><div class="metric-bottom"><div><span>中位耗时</span><b id="deepseekMedian">—</b></div><div><span>调用 / 未执行</span><b id="deepseekCalls">0 / 0</b></div><div><span>费用估算 USD</span><b id="deepseekCost">$0.000000</b></div></div></article></div></section></aside>
+</section>
+<section class="detail-panels" aria-label="决策日志与对照实验"><section class="inspector"><div class="panel-heading"><h2>决策现场</h2><span>LIVE TRACE</span></div><p class="panel-note">局面进来 → 模型选择 → 游戏执行</p><div id="stateView" class="state-view"><div><span>双方距离</span><strong id="distance">540</strong><small>units</small></div><div><span>左方动作</span><strong id="leftAction">等待</strong></div><div><span>右方动作</span><strong id="rightAction">等待</strong></div></div><div class="trace-label">最新决策 <span id="requestCount">0 / 120 次</span></div><div id="trace" class="trace"><div class="empty-trace"><span>↗</span><p>等待第一条真实决策</p><small>没有模型回答时，角色不会自动出招。</small></div></div></section>
+<section class="experiment"><div class="panel-heading"><h2>同局面对照</h2><span>CONTROLLED</span></div><p>让两个模型分别回答三个相同局面。将响应耗时与实战胜负分开观察。</p><button id="benchmark">运行 3 组对照 <span>↗</span></button><small>共 6 次真实调用 · 结果不计入对局</small><div id="benchmarkResults"></div></section>
+</section>
+
+<div id="notice" class="notice" role="status" aria-live="polite">正在连接本地服务…</div>
+<section class="integrity"><span class="small-title">实验边界</span><p>角色能力一致；每模型最多每秒 2 次请求，不并发。请求时游戏继续，过期或不可执行的动作被丢弃。费用按 token 和公开单价估算。</p><p>这是使用拳皇角色画面、独立简化规则的 AI 对战 Demo。胜负同时受决策质量、延迟和动作时机影响，不代表通用模型排名。</p></section>
+</main><footer><strong>DECISION ARENA</strong><span>结构化决策 / 速度 / 成本</span><span>密钥仅存放于本地服务端</span><a href="https://github.com/oosuhada/retro-king-of-fighters" target="_blank" rel="noopener">角色与舞台素材来源</a></footer>
+<script type="module" src="/app.js"></script>
+</body></html>

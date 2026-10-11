@@ -1,0 +1,659 @@
+{
+  "source": "https://github.com/oosuhada/retro-king-of-fighters",
+  "sourceCommit": "656732a0adc50a3bb17fae112283c4a8bcb86879",
+  "characters": {
+    "kyo": {
+      "idle": {
+        "file": "kyo-idle.png",
+        "width": 64,
+        "height": 106,
+        "columns": 10,
+        "frames": 10,
+        "durations": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchorX": 33.0,
+        "anchorY": 106,
+        "footY": [
+          106,
+          106,
+          106,
+          106,
+          106,
+          106,
+          106,
+          106,
+          106,
+          106
+        ]
+      },
+      "approach": {
+        "file": "kyo-approach.png",
+        "width": 63,
+        "height": 118,
+        "columns": 6,
+        "frames": 6,
+        "durations": [
+          90,
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "anchorX": 33.0,
+        "anchorY": 118,
+        "footY": [
+          118,
+          118,
+          118,
+          118,
+          118,
+          118
+        ]
+      },
+      "retreat": {
+        "file": "kyo-retreat.png",
+        "width": 58,
+        "height": 118,
+        "columns": 6,
+        "frames": 6,
+        "durations": [
+          90,
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "anchorX": 30.5,
+        "anchorY": 118,
+        "footY": [
+          118,
+          118,
+          118,
+          118,
+          118,
+          118
+        ]
+      },
+      "jump": {
+        "file": "kyo-jump.png",
+        "width": 87,
+        "height": 183,
+        "columns": 12,
+        "frames": 13,
+        "durations": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          200
+        ],
+        "anchorX": 49.5,
+        "anchorY": 183,
+        "footY": [
+          183,
+          166,
+          148,
+          120,
+          103,
+          87,
+          89,
+          108,
+          127,
+          144,
+          179,
+          183,
+          183
+        ]
+      },
+      "hurt": {
+        "file": "kyo-hurt.png",
+        "width": 83,
+        "height": 109,
+        "columns": 4,
+        "frames": 4,
+        "durations": [
+          80,
+          80,
+          80,
+          200
+        ],
+        "anchorX": 45.5,
+        "anchorY": 108,
+        "footY": [
+          108,
+          108,
+          108,
+          109
+        ]
+      },
+      "ko": {
+        "file": "kyo-ko.png",
+        "width": 150,
+        "height": 123,
+        "columns": 12,
+        "frames": 12,
+        "durations": [
+          200,
+          60,
+          60,
+          80,
+          60,
+          80,
+          60,
+          60,
+          60,
+          60,
+          60,
+          300
+        ],
+        "anchorX": 71.0,
+        "anchorY": 105,
+        "footY": [
+          105,
+          104,
+          104,
+          118,
+          123,
+          123,
+          120,
+          120,
+          120,
+          120,
+          114,
+          114
+        ]
+      },
+      "punch": {
+        "file": "kyo-punch.png",
+        "width": 180,
+        "height": 190,
+        "columns": 6,
+        "frames": 6,
+        "durations": [
+          30,
+          30,
+          30,
+          30,
+          30,
+          20
+        ],
+        "anchorX": 52.0,
+        "anchorY": 171,
+        "footY": [
+          171,
+          171,
+          171,
+          171,
+          172,
+          173
+        ]
+      },
+      "kick": {
+        "file": "kyo-kick.png",
+        "width": 180,
+        "height": 190,
+        "columns": 12,
+        "frames": 14,
+        "durations": [
+          20,
+          20,
+          20,
+          20,
+          30,
+          30,
+          60,
+          60,
+          60,
+          40,
+          30,
+          30,
+          20,
+          20
+        ],
+        "anchorX": 51.0,
+        "anchorY": 173,
+        "footY": [
+          173,
+          168,
+          170,
+          166,
+          164,
+          160,
+          156,
+          162,
+          166,
+          170,
+          172,
+          172,
+          173,
+          173
+        ]
+      },
+      "special": {
+        "file": "kyo-special.png",
+        "width": 180,
+        "height": 190,
+        "columns": 12,
+        "frames": 14,
+        "durations": [
+          60,
+          40,
+          30,
+          40,
+          40,
+          30,
+          30,
+          40,
+          30,
+          40,
+          40,
+          40,
+          30,
+          20
+        ],
+        "anchorX": 47.5,
+        "anchorY": 171,
+        "footY": [
+          171,
+          169,
+          171,
+          171,
+          171,
+          171,
+          173,
+          174,
+          174,
+          174,
+          174,
+          171,
+          172,
+          173
+        ]
+      },
+      "block": {
+        "file": "kyo-block.png",
+        "width": 180,
+        "height": 190,
+        "columns": 5,
+        "frames": 5,
+        "durations": [
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "anchorX": 54.5,
+        "anchorY": 174,
+        "footY": [
+          174,
+          174,
+          174,
+          174,
+          174
+        ]
+      }
+    },
+    "mai": {
+      "idle": {
+        "file": "mai-idle.png",
+        "width": 78,
+        "height": 94,
+        "columns": 12,
+        "frames": 18,
+        "durations": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "anchorX": 38.5,
+        "anchorY": 94,
+        "footY": [
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94
+        ]
+      },
+      "approach": {
+        "file": "mai-approach.png",
+        "width": 97,
+        "height": 104,
+        "columns": 6,
+        "frames": 6,
+        "durations": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchorX": 45.0,
+        "anchorY": 104,
+        "footY": [
+          104,
+          104,
+          104,
+          104,
+          104,
+          104
+        ]
+      },
+      "retreat": {
+        "file": "mai-retreat.png",
+        "width": 73,
+        "height": 101,
+        "columns": 6,
+        "frames": 6,
+        "durations": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchorX": 31.0,
+        "anchorY": 101,
+        "footY": [
+          101,
+          101,
+          101,
+          101,
+          101,
+          101
+        ]
+      },
+      "jump": {
+        "file": "mai-jump.png",
+        "width": 84,
+        "height": 210,
+        "columns": 12,
+        "frames": 14,
+        "durations": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          60,
+          180
+        ],
+        "anchorX": 43.0,
+        "anchorY": 206,
+        "footY": [
+          206,
+          204,
+          171,
+          121,
+          81,
+          73,
+          74,
+          54,
+          60,
+          108,
+          176,
+          210,
+          206,
+          207
+        ]
+      },
+      "hurt": {
+        "file": "mai-hurt.png",
+        "width": 77,
+        "height": 95,
+        "columns": 10,
+        "frames": 10,
+        "durations": [
+          60,
+          60,
+          140,
+          60,
+          60,
+          180,
+          60,
+          240,
+          60,
+          180
+        ],
+        "anchorX": 36.5,
+        "anchorY": 94,
+        "footY": [
+          94,
+          95,
+          95,
+          95,
+          94,
+          94,
+          95,
+          95,
+          95,
+          94
+        ]
+      },
+      "ko": {
+        "file": "mai-ko.png",
+        "width": 127,
+        "height": 108,
+        "columns": 10,
+        "frames": 10,
+        "durations": [
+          140,
+          80,
+          80,
+          80,
+          80,
+          80,
+          180,
+          80,
+          80,
+          800
+        ],
+        "anchorX": 56.0,
+        "anchorY": 100,
+        "footY": [
+          100,
+          100,
+          101,
+          100,
+          102,
+          102,
+          102,
+          101,
+          102,
+          108
+        ]
+      },
+      "punch": {
+        "file": "mai-punch.png",
+        "width": 180,
+        "height": 190,
+        "columns": 4,
+        "frames": 4,
+        "durations": [
+          30,
+          30,
+          60,
+          40
+        ],
+        "anchorX": 45.5,
+        "anchorY": 174,
+        "footY": [
+          174,
+          174,
+          174,
+          174
+        ]
+      },
+      "kick": {
+        "file": "mai-kick.png",
+        "width": 180,
+        "height": 190,
+        "columns": 9,
+        "frames": 9,
+        "durations": [
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          40,
+          40,
+          30
+        ],
+        "anchorX": 40.5,
+        "anchorY": 175,
+        "footY": [
+          175,
+          174,
+          174,
+          174,
+          174,
+          174,
+          174,
+          174,
+          175
+        ]
+      },
+      "special": {
+        "file": "mai-special.png",
+        "width": 180,
+        "height": 190,
+        "columns": 10,
+        "frames": 10,
+        "durations": [
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          80,
+          120,
+          110,
+          90
+        ],
+        "anchorX": 46.5,
+        "anchorY": 174,
+        "footY": [
+          174,
+          174,
+          174,
+          174,
+          173,
+          173,
+          174,
+          174,
+          174,
+          174
+        ]
+      },
+      "block": {
+        "file": "mai-block.png",
+        "width": 180,
+        "height": 190,
+        "columns": 3,
+        "frames": 3,
+        "durations": [
+          30,
+          80,
+          40
+        ],
+        "anchorX": 48.0,
+        "anchorY": 174,
+        "footY": [
+          174,
+          174,
+          174
+        ]
+      }
+    }
+  },
+  "stage": {
+    "file": "stage.png",
+    "width": 752,
+    "height": 224,
+    "columns": 8,
+    "frames": 8,
+    "durations": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120
+    ],
+    "anchorX": 376.0,
+    "anchorY": 224,
+    "footY": [
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+runs/
+node_modules/
+artifacts/
