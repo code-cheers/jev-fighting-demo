@@ -186,7 +186,7 @@ footer{flex-wrap:wrap}
 .overlay{inset:110px 30% auto;padding:18px 10px;background:rgba(12,18,24,.83);backdrop-filter:none;border:1px solid #607487}
 .overlay.complete{inset:100px 0 auto;background:transparent;border:0;pointer-events:none;text-shadow:0 2px 4px #000;padding:0}
 .overlay.complete .overlay-tag,.overlay.complete small,.overlay.complete button{display:none}
-.overlay.complete h2{color:#f1c40f;font-size:36px}
+.overlay.complete h2{color:#f1c40f;font-size:64px;font-weight:900;line-height:1.15;letter-spacing:2px}
 .overlay.complete p{color:#fff;margin:3px 0}
 .fighter-hud strong{white-space:nowrap}
 footer a{color:var(--cyan)}
@@ -196,7 +196,7 @@ footer a{color:var(--cyan)}
 .overlay{inset:75px 30% auto;padding:8px 5px}
 .overlay p{display:none}
 .overlay.complete{inset:72px 0 auto}
-.overlay.complete h2{font-size:23px}
+.overlay.complete h2{font-size:36px;letter-spacing:1px}
 .overlay.complete p{display:block;font-size:8px}
 }
 
